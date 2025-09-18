@@ -9,6 +9,8 @@ async function listarUsuarios() {
     data.forEach(item => {
         criarElementoLi(item.name)
     });
+}
+
 const capturandoTarefa = () => {
     const tarefa = document.getElementById('tarefa')
     const aux = tarefa.value 
@@ -21,6 +23,8 @@ async function listarFotografias() {
     data.forEach(item => {
         criarImagem(item.thumbnailUrl)
     });
+}
+
 const elementoCriarTarefa = (tarefa) => {
     const listaTarefas = document.getElementById('lista-tarefas')
     const elementoButton = document.createElement('button')
@@ -44,6 +48,8 @@ function criarImagem(img) {
     elementLi.innerHTML = `<img src='${img}'/>`
     const listaNaoOrdenada = document.querySelector('ul')
     listaNaoOrdenada.appendChild(elementLi)
+}
+
 const mostrarAlerta = (frase) => {
     const elementoAlerta = document.getElementById('alerta')
     elementoAlerta.classList.remove('alerta-sumir')
